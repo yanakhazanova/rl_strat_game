@@ -390,20 +390,20 @@ class np_nn:
             layer = self.layers[i]
             if 'w' in layer.keys():
                 delta = len(np.ravel(layer['w']))
-                layer['w'] = np.reshape(genom[pointer:pointer+delta],newshape=np.shape(layer['w']))
+                layer['w'] = np.reshape(genom[pointer:pointer+delta], shape=np.shape(layer['w']))
                 pointer += delta
             
                 delta = len(np.ravel(layer['b']))
-                layer['b'] = np.reshape(genom[pointer:pointer+delta],newshape=np.shape(layer['b']))
+                layer['b'] = np.reshape(genom[pointer:pointer+delta], shape=np.shape(layer['b']))
                 pointer += delta
            
             if 'w_mem' in layer.keys():
                 delta = len(np.ravel(layer['w_mem']))
-                layer['w_mem'] = np.reshape(genom[pointer:pointer+delta],newshape=np.shape(layer['w_mem']))
+                layer['w_mem'] = np.reshape(genom[pointer:pointer+delta], shape=np.shape(layer['w_mem']))
                 pointer += delta
             if 'w_modulable' in layer.keys():
                 delta = len(np.ravel(layer['w_modulable']))
-                layer['w_modulable'] = np.reshape(genom[pointer:pointer+delta],newshape=np.shape(layer['w_modulable']))
+                layer['w_modulable'] = np.reshape(genom[pointer:pointer+delta], shape=np.shape(layer['w_modulable']))
                 pointer += delta
             
             self.layers[i] = layer
