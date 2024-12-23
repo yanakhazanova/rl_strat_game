@@ -1,5 +1,9 @@
 # rl_strat_game
 
+Ноутбуки с реализацией алгоритмов и финальными графиками: mini_strat_game_custom_algorithms и mini_strat_game_baseline.
+
+---
+
 Рассчет наград:
 
 ### Компоненты награды:
